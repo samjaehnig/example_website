@@ -2,12 +2,12 @@
 body {
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
-  background-color: #EAD7DC;
+  background-color: #ffe1e2;
   margin: 0px;
 }
 
 p {
-  color: #AD645C;
+  color: #fd999d;
   font-size: 70px;
 }
 
@@ -15,13 +15,14 @@ p {
   margin: 15px 0px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 button {
   font-family: 'PT Sans Narrow', sans-serif;
   border: none;
   background: none;
-  color: #AD645C;
+  color: #fd999d;
   font-size: 21px;
 }
 
@@ -36,7 +37,7 @@ button:focus {
 }
 
 #smaller_text {
-  color: #AD645C;
+  color: #fd999d;
   font-size: 35px;
 }
 
@@ -46,21 +47,21 @@ button:focus {
 
 .about_content {
   font-size: 26px;
-  color: #AD645C;
+  color: #fd999d;
   margin-top: 43px;
 }
 
 .left {
   width: 50%;
   height: 96.5vh;
-  background-color: #AD645C;
+  background-color: #fd999d;
   float: left;
 }
 
 .right {
   width: 50%;
   height: 96.5vh;
-  background-color: #000000;
+  background-color: #ffcdcf;
   float: right;
 }
 
@@ -71,7 +72,7 @@ img {
 }
 
 .box {
-  background-color: #AD645C;
+  background-color: #ffcdcf;
   padding: 10px;
   margin: 10px;
   border-radius: 15px;
@@ -84,6 +85,25 @@ img {
   flex-wrap: wrap;
 }
 
+.box {
+  position: relative;
+}
+
+.img {
+  position: relative;
+}
+
+.img:hover, .content:hover {
+  cursor: pointer;
+}
+
 .content {
+  position: absolute;
+  top: 100px;
+  left: 87px;
+  display: none;
+}
+
+.caption_under {
   margin-top: 10px;
 }
